@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMSC471-A3</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1>CMSC471-A3</h1>
+    <h3>Work Split Writeup</h3>
+    <p>In terms of workload, we split the project up with Tanvi doing the White Hat visualization, and Aman doing the Black Hat visualization, and we wrote up our respective writeups. For the White Hat visualization, it took approximately 3-4 hours to complete, as both of us were still getting comfortable with using Tableau, but the actual creation of the visualization was not very difficult. For Tanvi, the part that took the most time was the process of deciding what data was relevant for me to use in my visualization, and the Tableau set up was a bit tedious as well. For Aman, the most difficult part was filtering the data so that the numbers were “true”, but exaggerated. I was able to get very familiar with the filters, axis, and measure values that Tableau has, as I was constantly toying with those values.</p>
+    <h3>White Hat Visualization</h3>
+    <div class='tableauPlaceholder' id='viz1743891665578' style='position: relative'><noscript><a href='#'><img alt='Washington D.C. Gentrification Map (2000 - 2017) '
+        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ge&#47;GentrificationVis_WhiteHat&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  
+        style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GentrificationVis_WhiteHat&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ge&#47;GentrificationVis_WhiteHat&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object>
+    </div>                
+    <script type='text/javascript'>                    
+        var divElement = document.getElementById('viz1743891665578');                    
+        var vizElement = divElement.getElementsByTagName('object')[0];                    
+        vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+        var scriptElement = document.createElement('script');                    
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
+    <p>
+        For this visualization, we chose to explore the Gentrification and Demographic Analysis Dataset compiled by BuzzFeed News. 
+        The dataset includes a variety of information that we needed to parse through in order to convey an understandable message and relevant visualization. 
+        I wanted to demonstrate how gentrification has an effect on the racial demographics of an area, alongside its effects on housing prices.
+        I chose Washington D.C. to focus on in particular because it is close to us geographically, which increases its relevance, 
+        and I thought it would be easier to focus on one location rather than all 6 presented in the dataset. 
+        Naturally, a bit of context is required to understand the visualization, but to begin with a simple definition of gentrification, 
+        it is defined as the process by which a poor urban area is changed by wealthier folk moving in, improving housing, attracting businesses, 
+        and simultaneously displacing the poorer inhabitants that previously resided there.
+        Gentrification almost always results in a few things: the increase of home value, the migration of poor POC, and the introduction of wealthier white people. 
+        This data visualization aims to display that in a non-biased manner, focusing on purely the data at hand. 
+        In some capacity, the aggregation of all groups of POC into one large category could introduce bias, but generally the individual values for each group show a similar trend, 
+        so I do not think that it is misleading to group them in this way. Moreover, for housing, I calculated the increase from the median home value in 2000 to the median home value in 2017 
+        in order to show a more easily understandable percentage, as that is simply compared by the reader in the gentrified and non-gentrified areas to understand the results. 
+        I chose to divide the data for D.C. by gentrified areas and non-gentrified areas as labeled by the dataset in order to highlight the differences between the two. 
+        The tooltip holds the majority of the information, which I thought was convenient for users because it allows them to get access to the message of the visualization easily.
+        Particularly, I highlight the demographic shift and the home value increase from 2000 to 2017 in gentrified and non-gentrified areas, 
+        because I think that allows for an easy comparison of the data. The visualization is not intended to push a certain narrative, rather it lets the data speak for itself,
+        and presents a picture of demographics and changing real estate within Washington D.C.
+    </p>
+    <h3>Black Hat Visualization</h3>
+    //INSERT BLACK HAT VIS HERE
+    <p>
+        This black hat visualization uses several manipulative techniques meant to exaggerate and distort the true story behind median income changes across different cities. The primary method used is selective filtering. The dataset is presented to the viewer in a way as to include only those cities where income increases are most dramatic, effectively disregarding cases with moderate or negligible changes. New York, Oakland, and Washington were the ones included in the visualization, while Atlanta and Baltimore were disregarded because their incomes were too close together. By doing so, the visualization creates a skewed narrative, suggesting that steep income surges are a universal phenomenon, rather than a localized occurrence.
+        In addition to selective filtering, the visualization utilizes distorted scales. The y-axis is edited so that it starts at a value significantly at 90,000. This deliberate manipulation seems to increase the differences between the income levels in 2000 and 2017, making modest increases appear significantly larger. This results in a dramatic visual impact that misleads viewers into believing that the income gap is far more alarming than it actually is.
+        The choice of color encoding also reinforces the intended narrative. By using an aggressive color palette—such as the deep red and bright orange for the bars—the visualization attempts to invoke a sense of urgency and crisis. These colors are often associated with danger and warnings, subconsciously alert the viewer to a looming threat of gentrification and displacement, even if the numerical differences do not necessarily support such a dire interpretation.
+        In addition to this, misleading annotations and labeling contribute to the overall biased presentation. Aggressive titles and captions, such as “Median Income (2017) - CRISIS” and “These values represent massive spikes in income, indicating widespread gentrification! NO ONE IS SAFE! Communities ripped apart because of skyrocketing upper class income!” are employed to frame the data within a sensational context. The legends and tooltips are similarly skewed, “WARNING: Major Spike in Income! INFLATION ON THE RISE! Gentrification hotspot!” providing commentary that emphasizes extreme interpretations while glossing over more balanced insights.
+        Overall, the combination of selective data presentation, manipulated axes, deceptive color usage, and inflammatory annotations transforms an otherwise neutral dataset into a compelling narrative of crisis. This black hat visualization thus demonstrates the powerful rhetorical force of data visualization when ethical standards are set aside in favor of creating a dramatic, yet misleading, representation of reality.
+    </p>
+</body>
+</html>
